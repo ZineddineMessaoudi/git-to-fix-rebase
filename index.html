@@ -7,20 +7,20 @@
   </head>
   <body>
     <h1 class="title">Calculateur de macro pour les costauds !</h1>
-    <table id="food-log-table">
-      <thead>
-        <tr>
-          <td>Date</td>
-          <td>Aliment</td>
-          <td>Quantité</td>
-          <td>Protéines</td>
-          <td>Glucides</td>
-          <td>Lipides</td>
-          <td>Alcool</td>
-          <td>Energie</td>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
+    <form id="food-form">
+      <fieldset>
+        <label for="food-input">Aliment</label>
+        <input list="food-list" id="food-input" name="food-input" />
+
+        <datalist id="food-list"> </datalist>
+
+        <label for="food-quantity">Quantité (grammes)</label>
+        <input type="number" id="food-quantity" min="1" />
+      </fieldset>
+
+      <button type="submit">Ajouter un ingrédient</button>
+    </form>
+
+    <script src="script.js"></script>
   </body>
 </html>
